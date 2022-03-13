@@ -13,6 +13,7 @@ window:
 
   # spread additional padding evenly around the terminal content.
   dynamic_padding: false
+  decorations: full
 
 scrolling:
   history: 1000
@@ -33,7 +34,7 @@ font:
     family: mononoki NF
     style: Italic 
 
-  size: 12
+  size: 8.4
 
   offset:
     x: 0
@@ -43,7 +44,48 @@ font:
     x: 0
     y: 0
 
+# Colors (Wombat)
+colors:
+  # Default colors
+  primary:
+    background: '#2E3440'
+    foreground: '#D8DEE9'
+
+  # Normal colors
+  normal:
+    black:   '#3B4252'
+    red:     '#BF616A'
+    green:   '#A3BE8C'
+    yellow:  '#EBCB8B'
+    blue:    '#81A1C1'
+    magenta: '#B48EAD'
+    cyan:    '#88C0D0'
+    white:   '#E5E9F0'
+
+  # Bright colors
+  bright:
+    black:   '#4C566A'
+    red:     '#BF616A'
+    green:   '#A3BE8C'
+    yellow:  '#EBCB8B'
+    blue:    '#81A1C1'
+    magenta: '#B48EAD'
+    cyan:    '#8FBCBB'
+    white:   '#ECEFF4'
+  indexed_colors: []
+
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
 
   save_to_clipboard: false
+
+cursor:
+  style: Beam
+
+  unfocused_hollow: true
+
+dynamic_title: true
+
+live_config_reload: true
+
+enable_experimental_conpty_backend: true
