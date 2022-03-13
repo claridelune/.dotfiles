@@ -1,9 +1,8 @@
-git clone in your $HOME
+# Clonar repositorio
 
-    git clone https://github.com/CamiaCL/dotfiles.git
-    mkdir .dotfiles
-    cp -r * .dotfiles
-    rm .rf dotfiles
+en el $HOME:
+
+    git clone https://github.com/CamiaCL/.dotfiles.git
 
 Instalacion de bspwm
 
@@ -12,7 +11,7 @@ para el modo grafico se usara "startx"
 
     sudo pacman -S xorg-server xorg-xinit xf86-video-qxl bspwm sxhkd rofi picom alacritty arandr
 
-Configuracion inicial
+# Configuracion inicial
 
     mkdir ~/.config/bspwm
     mkdir ~/.config/sxhkd
@@ -32,13 +31,20 @@ despues edita .config/sxhkd/sxhkdrc y pones tu terminal en mi caso alacritty
       rofi show -run
 
 
-Configura Xinit
+# Configura Xinit
     cp /etc/X11/xinit/xinitrc ./xinitrc
 
 luego removemos las ultimas 5 lineas y ponemos
     sxhkd &
     exec bspwm
 
+# Instalar fuentes
+	cd fonts
+	sudo cp * /usr/share/fonts/  -- Archlinux
+	sudo cp * /usr/share/fonts/truetype  -- Pop_Os
 
+regenera la cache
+	fc-cache -f -v
 
-
+# Instalar polybar
+	yay polybar
