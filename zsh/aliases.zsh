@@ -1,8 +1,0 @@
-alias dt="~/Desktop"
-alias dl="~/Downloads"
-alias p="~/Projects"
-alias dof="~/.dotfiles"
-alias omz="~/.oh-my-zsh"
-alias bin="/usr/local/bin"
-alias cat="bat"
-alias t="date +%H:%M"
