@@ -128,19 +128,31 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+# ---- SYSTEM ----
+
 # Volume
 
-#
 XF86AudioMute
         amixer -D pulse sset Master toggle
 
-#XF86Audio{Raise,Lower}Volume
-        #amixer -D pulse sset Master 5%{+,-}
 XF86Audio{Raise,Lower}Volume
         amixer sset Master 5%{+,-}
-
-#
 # Media Controls
-#
 XF86Audio{Play,Prev,Next}
         playerctl --player=vlc,spotify {play-pause,previous,next} 
+
+# Brightness
+XF86MonBrightness{Up,Down}
+	brightnessctl set 5%{+,-}
+
+# take a screenshot
+Print
+  scrot $HOME/Pictures/Screenshots/'screenshot_%m-%d-%Y_%H-%M-%S.png' -e 'xclip -selection clipboard -target image/png -i $f; feh -F $f'
+
+# take a screenshot in 5 seconds
+super + shift + Print
+  scrot -d 5 -s $HOME/Pictures/Screenshots/'snip_%m-%d-%Y_%H-%M-%S.png' -e 'xclip -selection clipboard -target image/png -i $f; feh -F $f'
+
+# take a snippet
+super + Print
+  scrot -s $HOME/Pictures/Snips/'snip_%m-%d-%Y_%H-%M-%S.png' -e 'xclip -selection clipboard -target image/png -i $f'

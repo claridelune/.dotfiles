@@ -22,7 +22,7 @@ source $HOME/.zsh-plugins/fzf/key-bindings.zsh
 
 # PROMPR, git, hostnames
 source ~/.zsh-plugins/git-prompt.zsh/git-prompt.zsh
-source ~/.zsh-plugins/git-prompt.zsh/examples/wprompt.zsh
+source ~/.zsh-plugins/git-prompt.zsh/examples/compact.zsh
 
 # Enable sintax highlighting :3
 source ~/.zsh-plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
