@@ -1,0 +1,86 @@
+[global]
+    monitor = 0
+    follow = none
+
+    # geometry = "320x6-20+35"
+    width = (160, 320)
+    height = 200
+    offset = "5x32"
+
+    notification_limit = 10
+
+    # Progress bar 
+    progress_bar = true
+    progress_bar_height = 3
+    progress_bar_frame_width = 1
+    progress_bar_min_width = 160
+    progress_bar_max_width = 320
+
+    indicate_hidden = yes
+    shrink = no
+    notification_height = 15
+    separator_height = 1
+    padding = 10
+    horizontal_padding = 10
+    text_icon_padding = 10
+    frame_width = 1
+    frame_color = "#414868"
+    separator_color = frame
+    sort = yes
+    idle_threshold = 120
+    font = Mononoki NF
+    line_height = 0
+    markup = full
+    format = "<span><b>%s %p</b></span>\n%b"
+    alignment = center
+    show_age_threshold = -1
+    ellipsize = end
+    ignore_newline = no
+    stack_duplicates = true
+    hide_duplicate_count = false
+    show_indicators = yes
+    icon_position = left
+    icon_path = /usr/share/icons/hicolor/scalable/apps:/usr/share/icons/hicolor/24x24/status
+    max_icon_size = 32
+    sticky_history = yes
+    history_length = 8
+    always_run_script = true
+    startup_notification = false
+    verbosity = mesg
+    corner_radius = 4
+    force_xinerama = false
+    mouse_left_click = do_action
+    mouse_middle_click = close_all
+    mouse_right_click = close_current
+
+
+[shortcuts]
+    close = ctrl+space
+    history = ctrl+shift+space
+    context = ctrl+shift+period
+
+
+[urgency_low]
+    # IMPORTANT: colors have to be defined in quotation marks.
+    # Otherwise the '#' and following  would be interpreted as a comment.
+    background="#24283b"
+    foreground="#a9b1d6"
+    timeout = 3
+
+
+[urgency_normal]
+    background="#24283b"
+    foreground="#a9b1d6"
+    highlight="#f7768e"
+    timeout = 5
+
+
+[urgency_critical]
+    background="#e0af68"
+    foreground="#1a1b26"
+    highlight="#f7768e"
+	  timeout = 5
+
+[play_sound]
+        summary = "*"
+        script = "~/.config/dunst/notif.sh"
