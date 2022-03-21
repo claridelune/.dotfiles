@@ -4,6 +4,9 @@
 picom -b &
 sxhkd &
 
+pkill dunst
+dunst -conf ~/.config/dunst/dunstrc &
+
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
