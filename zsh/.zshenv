@@ -1,3 +1,14 @@
+export HISTFILE=~/.histfile
+export HISTSIZE=1000000   # the number of items for the internal history list
+export SAVEHIST=1000000   # maximum number of items for the history file
+export HISTCONTROL='ignoreboth';
+export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear";
+# The meaning of these options can be found in man page of `zshoptions`.
+setopt HIST_IGNORE_ALL_DUPS  
+setopt HIST_SAVE_NO_DUPS  
+setopt HIST_REDUCE_BLANKS  
+setopt INC_APPEND_HISTORY_TIME  
+
 # typeset -U PATH path
 
 # General Environment Variables

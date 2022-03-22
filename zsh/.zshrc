@@ -1,13 +1,3 @@
-export HISTFILE=~/.histfile
-export HISTSIZE=1000000   # the number of items for the internal history list
-export SAVEHIST=1000000   # maximum number of items for the history file
-
-# The meaning of these options can be found in man page of `zshoptions`.
-setopt HIST_IGNORE_ALL_DUPS  
-setopt HIST_SAVE_NO_DUPS  
-setopt HIST_REDUCE_BLANKS  
-setopt INC_APPEND_HISTORY_TIME  
-
 # Local
 setxkbmap latam
 TZ='America/Lima'; export TZ
@@ -30,3 +20,5 @@ source ~/.zsh-plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.z
 # autosuggest plugin
 bindkey '^ ' autosuggest-accept
 bindkey '^f' autosuggest-accept
+
+. ~/.dotfiles/zsh/system/init.zsh
