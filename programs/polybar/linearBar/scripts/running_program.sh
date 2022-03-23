@@ -12,4 +12,5 @@ fi
 [ "$NAME" == "discord" ] && echo "%{T7}碌 %{T-} Discord" && exit 0
 [ "$NAME" == "desktop" ] && echo "%{T7} %{T-} Desktop" && exit 0
 [ "$NAME" == "Alacritty" ] && echo "%{T7} %{T-} Alacritty" && exit 0
+[ "$NAME" == "org.pwmt.zathura" ] && echo "%{T7} %{T-} Zathura" && exit 0
 echo "%{T7} %{T-}$NAME"
