@@ -10,6 +10,8 @@ ln -sf ~/.dotfiles/programs/polybar ~/.config
 ln -sf ~/.dotfiles/programs/rofi ~/.config
 # Notifications
 ln -sf ~/.dotfiles/programs/dunst ~/.config
+# Pdf reader
+ln -sf ~/.dotfiles/programs/zathura ~/.config
 
 # ZSH
 ln -sfn ~/.dotfiles/zsh/.zsh-plugins ~/.zsh-plugins
