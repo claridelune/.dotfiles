@@ -21,3 +21,7 @@ cf() {
 dt() {
   cd $HOME/.dotfiles && lsd
 }
+
+take() {
+  mkdir $1 && cd $1
+}
