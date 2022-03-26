@@ -1,3 +1,6 @@
 [submodule "zsh/.zsh-plugins/F-Sy-H"]
 	path = zsh/.zsh-plugins/F-Sy-H
 	url = https://github.com/z-shell/F-Sy-H.git
+[submodule "zsh/.zsh-plugins/git-prompt.zsh"]
+	path = zsh/.zsh-plugins/git-prompt.zsh
+	url = https://github.com/woefe/git-prompt.zsh.git

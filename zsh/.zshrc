@@ -12,10 +12,10 @@ source $HOME/.zsh-plugins/fzf/key-bindings.zsh
 
 # PROMPR, git, hostnames
 source ~/.zsh-plugins/git-prompt.zsh/git-prompt.zsh
-source ~/.zsh-plugins/git-prompt.zsh/examples/compact.zsh
+source ~/.zsh-plugins/git-prompt.zsh/examples/myprompt.zsh
 
 # Enable sintax highlighting :3
-source ~/.zsh-plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source ~/.zsh-plugins/F-Sy-H/fast-syntax-highlighting.plugin.zsh
 
 # autosuggest plugin
 bindkey '^ ' autosuggest-accept
