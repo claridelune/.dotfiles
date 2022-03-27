@@ -116,8 +116,12 @@ super + ctrl + shift + space
 
 #
 # resize mode
+# resize mode
 super + r : {_, shift +}{h, j, k, l}
 	bspc node -z {left -10 0, right -10 0, bottom 0 10, top 0 10,\
+                top 0 -10, bottom 0 -10, right 10 0, left 10 0}
+#### Volume
+
 XF86AudioMute
         amixer -D pulse sset Master toggle
 
