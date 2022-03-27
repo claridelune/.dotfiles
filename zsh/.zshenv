@@ -9,13 +9,18 @@ setopt HIST_SAVE_NO_DUPS
 setopt HIST_REDUCE_BLANKS  
 setopt INC_APPEND_HISTORY_TIME  
 
-# typeset -U PATH path
+typeset -U PATH path
+
+# Custom Scripts
+PATH=$PATH:~/.dotfiles/bin
+
 
 # General Environment Variables
 export LANG=en_US.UTF-8
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR="nvim"
+export READER="zathura"
 # export BROWSER="vivaldi"
 export ARCHFLAGS="-arch x86_64"
 

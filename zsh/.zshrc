@@ -22,4 +22,5 @@ bindkey '^ ' autosuggest-accept
 bindkey '^f' autosuggest-accept
 
 . ~/.dotfiles/zsh/system/init.zsh
+blocks
 source ~/.secrets
