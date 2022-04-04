@@ -14,6 +14,8 @@ typeset -U PATH path
 # Custom Scripts
 PATH=$PATH:~/.dotfiles/bin
 
+# TexLab
+PATH=$PATH:~/.cargo/bin
 
 # General Environment Variables
 export LANG=en_US.UTF-8
