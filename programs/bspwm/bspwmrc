@@ -25,6 +25,7 @@ bspc rule -a Pavucontrol    state=floating
 bspc rule -a feh            state=floating
 bspc rule -a zoom           state=floating
 
+bspc config focus_follows_pointer true
 
 # Configure the wallpaper
 feh --bg-fill $HOME/Pictures/wallpapers/15.jpg
