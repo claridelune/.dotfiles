@@ -17,6 +17,9 @@ PATH=$PATH:~/.dotfiles/bin
 # TexLab
 PATH=$PATH:~/.cargo/bin
 
+# Python
+PATH=$PATH:~/.local/bin
+
 # General Environment Variables
 export LANG=en_US.UTF-8
 
