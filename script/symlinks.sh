@@ -6,6 +6,8 @@ ln -sf ~/.dotfiles/programs/bspwm/ ~/.config
 ln -sf ~/.dotfiles/programs/sxhkd ~/.config
 # Bar
 ln -sf ~/.dotfiles/programs/polybar ~/.config
+# picom
+ln -sf ~/.dotfiles/programs/picom ~/.config
 
 ln -sf ~/.dotfiles/programs/rofi ~/.config
 # Notifications
