@@ -6,8 +6,16 @@ fiu() {
 	fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'
 }
 
+vf () {
+  $EDITOR $(fiu)
+}
+
 wii() {
   cd $HOME/Projects && lsd
+}
+
+wuju() {
+  cd $HOME/Projects/Eternal-Dreamers && lsd
 }
 
 dw() {

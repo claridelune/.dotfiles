@@ -8,5 +8,3 @@ alias cat="bat"
 alias q="exit"
 alias p="~/Projects"
 alias tree="lsd --tree"
-
-
