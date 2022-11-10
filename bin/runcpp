@@ -1,0 +1,14 @@
+#!/bin/bash
+
+CFILE=$1
+OUTPUT=${2:0}
+
+g++ -pthread -Wall -std=c++14 -o main $CFILE
+echo  "Built file: $CFILE"
+./main
+if test -f "$OUTPUT"; then
+    echo "$OUTPUT exists.\n"
+    cat $OUTPUT
+fi
+echo "Clean...."
+rm -f main
