@@ -7,8 +7,7 @@ g++ -pthread -Wall -std=c++14 -o main $CFILE
 echo  "Built file: $CFILE"
 ./main
 if test -f "$OUTPUT"; then
-    echo "$OUTPUT exists.\n"
-    cat $OUTPUT
+    echo "$OUTPUT exists."
+    bat $OUTPUT
 fi
-echo "Clean...."
 rm -f main

@@ -7,7 +7,7 @@ else
 fi
 
 [ "$NAME" == "music_player" ] && echo "%{T7}阮 %{T-} Music" && exit 0
-[ "$NAME" == "code" ] && echo "%{T7}﬏ %{T-} VS Code" && exit 0
+[ "$NAME" == "code-oss" ] && echo "%{T7}﬏ %{T-} VS Code" && exit 0
 [ "$NAME" == "vivaldi-stable" ] && echo "%{T7} %{T-} Vivaldi" && exit 0
 [ "$NAME" == "discord" ] && echo "%{T7}碌 %{T-} Discord" && exit 0
 [ "$NAME" == "desktop" ] && echo "%{T7} %{T-} Desktop" && exit 0

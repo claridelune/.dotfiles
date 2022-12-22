@@ -30,10 +30,10 @@ _bc rule -a feh            state=floating
 _bc rule -a zoom           state=floating
 _bc rule -a discord        state=floating
 
-_bc config focus_follows_pointer true
+_bc config focus_follows_pointer false
 
 # Configure the wallpaper
-# feh --bg-fill $HOME/Pictures/wallpaper.jpg
+feh --bg-fill $HOME/Pictures/wallpapers/ehlj0i4l6bx91.jpg
 
 # Autostart
 xsetroot -cursor_name left_ptr & 
@@ -47,4 +47,4 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 pkill dunst
 dunst -conf ~/.config/dunst/dunstrc &
 
-hsetroot -solid "#143F5E"
+# hsetroot -solid "#143F5E"
