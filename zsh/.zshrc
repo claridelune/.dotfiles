@@ -12,10 +12,10 @@ source $HOME/.zsh-plugins/fzf/key-bindings.zsh
 
 # PROMPR, git, hostnames
 source ~/.zsh-plugins/git-prompt.zsh/git-prompt.zsh
-source ~/.zsh-plugins/git-prompt.zsh/examples/myprompt.zsh
+source ~/.zsh-plugins/git-prompt.zsh/examples/bashgitprompt.zsh
 
 # Enable sintax highlighting :3
-source ~/.zsh-plugins/F-Sy-H/fast-syntax-highlighting.plugin.zsh
+source ~/.zsh-plugins/F-Sy-H/F-Sy-H.plugin.zsh
 
 # autosuggest plugin
 bindkey '^ ' autosuggest-accept
@@ -27,3 +27,13 @@ source ~/.secrets
 
 export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="$PATH:/var/lib/snapd/snap/bin"
+
+# Conda
+source /opt/anaconda/etc/profile.d/conda.sh
+
+# Mojojojo
+export MODULAR_HOME="~/.modular"
+export PATH="~/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+# >>> xmake >>>
+test -f "/home/clari/.xmake/profile" && source "/home/clari/.xmake/profile"
+# <<< xmake <<<

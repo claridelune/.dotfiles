@@ -20,13 +20,17 @@ PATH=$PATH:~/.cargo/bin
 # Python
 PATH=$PATH:~/.local/bin
 
+#CUDA
+export PATH=/opt/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
+
 # General Environment Variables
 export LANG=en_US.UTF-8
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR="nvim"
 export READER="zathura"
-# export BROWSER="vivaldi"
+export BROWSER="vivaldi-stable"
 export ARCHFLAGS="-arch x86_64"
 
 # FZF

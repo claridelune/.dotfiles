@@ -9,7 +9,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 _bc monitor -d I II III IV V VI VII VIII IX X
 
-_bc config border_width         0
+_bc config border_width         1
 _bc config window_gap           7
 _bc config top_padding          26
 # _bc config border_radius        10
@@ -19,8 +19,8 @@ _bc config borderless_monocle   true
 _bc config gapless_monocle      true
 
 # border
-# _bc config focused_border_color        "#FFCC80"
-# _bc config normal_border_color         "#7E57C2"
+_bc config focused_border_color        "#FFCC80"
+_bc config normal_border_color         "#7E57C2"
 
 # Rules
 # bspc rule -a mpv state=fullscreen
@@ -29,11 +29,12 @@ _bc rule -a Pavucontrol    state=floating
 _bc rule -a feh            state=floating
 _bc rule -a zoom           state=floating
 _bc rule -a discord        state=floating
+_bc rule -a spotify        state=floating
 
-_bc config focus_follows_pointer false
+_bc config focus_follows_pointer true
 
 # Configure the wallpaper
-feh --bg-fill $HOME/Pictures/wallpapers/ehlj0i4l6bx91.jpg
+feh --bg-fill $HOME/Pictures/wallpapers/5.png
 
 # Autostart
 xsetroot -cursor_name left_ptr & 

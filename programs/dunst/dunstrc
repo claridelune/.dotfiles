@@ -81,6 +81,6 @@
     highlight="#f7768e"
 	  timeout = 5
 
-[play_sound]
+/* [play_sound]
         summary = "*"
-        script = "~/.config/dunst/notif.sh"
+        script = "~/.config/dunst/notif.sh" */
