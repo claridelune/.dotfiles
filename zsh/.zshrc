@@ -1,6 +1,6 @@
 # Local
-setxkbmap latam
-TZ='America/Lima'; export TZ
+setxkbmap us
+TZ='America/Chicago'; export TZ
 
 # Enable fish shell
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=247'
@@ -24,16 +24,3 @@ bindkey '^f' autosuggest-accept
 . ~/.dotfiles/zsh/system/init.zsh
 blocks
 source ~/.secrets
-
-export PATH="$HOME/.poetry/bin:$PATH"
-export PATH="$PATH:/var/lib/snapd/snap/bin"
-
-# Conda
-source /opt/anaconda/etc/profile.d/conda.sh
-
-# Mojojojo
-export MODULAR_HOME="~/.modular"
-export PATH="~/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
-# >>> xmake >>>
-test -f "/home/clari/.xmake/profile" && source "/home/clari/.xmake/profile"
-# <<< xmake <<<

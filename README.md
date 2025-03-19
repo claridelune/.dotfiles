@@ -1,40 +1,27 @@
-# Clonar repositorio
+# My dotfiles
 
-en el $HOME:
+## Clone Repository
 
-    git clone https://github.com/CamiaCL/.dotfiles.git
+    git clone https://github.com/claridelune/.dotfiles.git
 
-Instalacion de bspwm
+### Instalacion de bspwm
 
-paquetes necesarios para bspwm
-para el modo grafico se usara "startx"
+#### Bspwm, xserver dependencies
 
     sudo pacman -S xorg-server xorg-xinit xf86-video-qxl bspwm sxhkd rofi picom alacritty arandr
 
-# Configuracion inicial
+'startx'
 
-    mkdir ~/.config/bspwm
-    mkdir ~/.config/sxhkd
+## Symlinks
 
-    cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm
+    chmod +x script/symlinks.sh 
+    ./script/symlinks.sh 
 
-    cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd
+## Configura Xinit
+    #cp /etc/X11/xinit/xinitrc ./xinitrc
 
-despues edita .config/sxhkd/sxhkdrc y pones tu terminal en mi caso alacritty
-    nvim .config/sxhkd/sxhkdrc
+add the following lines on ./xinitrc:
 
-    # terminal emulator
-    super + Return
-      alacritty
-    # program launcher
-    super + space
-      rofi show -run
-
-
-# Configura Xinit
-    cp /etc/X11/xinit/xinitrc ./xinitrc
-
-luego removemos las ultimas 5 lineas y ponemos
     sxhkd &
     exec bspwm
 
@@ -43,8 +30,35 @@ luego removemos las ultimas 5 lineas y ponemos
 	sudo cp * /usr/share/fonts/  -- Archlinux
 	sudo cp * /usr/share/fonts/truetype  -- Pop_Os
 
-regenera la cache
+rebuild cache:
+
 	fc-cache -f -v
 
-# Instalar polybar
+## Get an AUR Helper(yay)
+
+    pacman -S --needed git base-devel
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si
+
+# Install polybar
+
 	yay polybar
+
+## Wifi
+
+    nmcli device wifi list
+    nmcli device wifi connect "wifi" password "password"
+    nmcli radio wifi on
+    nmcli radio wifi off
+
+## Keyboard
+
+    sudo localectl set-keymap  "your-layout"
+
+## Audio
+    
+    sudo pacman -S alsa-utils
+    wpctl status
+
+
